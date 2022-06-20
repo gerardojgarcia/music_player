@@ -13,12 +13,12 @@ html {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #656464;
     font-family: 'Lato', sans-serif;
     height: 100vh;
     width: 100%;
     margin: 0;
-    background-image: linear-gradient(0deg, rgb(247,247,247) 23.8%, rgb(252,221,221) 92%);
+   
     background-repeat: no-repeat;
      
     
@@ -35,7 +35,7 @@ body {
         'sidebar player player player sidebar2'
         'footer footer footer footer footer';
     
-
+    background-color: #c9c9c9;
     width: 100%;
       
     border-radius: 5vh;
@@ -209,8 +209,8 @@ h2 {
     justify-content: center;
     background-color: white;
     grid-area: player;
-    border-radius: 15px;
-    box-shadow: 0 20px 20px 0 rgba(252, 169,169, 0.6);
+
+    box-shadow: 10px 7px 0px 2px rgba(252, 169,169, 0.6);
     opacity: 0;
     padding: 50px 50px;
     position: relative;
@@ -223,14 +223,15 @@ h2 {
         position: relative;
         width: 250px;
         margin-right: 100px;
-        
+        visibility: hidden;
+
        
         
         
         
 
         ::after {
-            content: '';
+            /*content: '';
             background-color: white;
             height: 20px;
             width: 20px;
@@ -238,7 +239,7 @@ h2 {
             bottom: 50%;
             left: 50%;
             border-radius: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);*/
             
 
         }
@@ -247,7 +248,7 @@ h2 {
                 
                     width: inherit;
                     height: 250px;
-                    border-radius: 50%;
+
                     object-fit: cover;
                     position: absolute;
                     bottom: 0;
@@ -262,15 +263,7 @@ h2 {
 
                     
             }
-            @keyframes rotate {
-                from {
-                    transform: rotate(0deg);
-                }
-
-                to {
-                    transform: rotate(360deg);
-                }
-            }
+           
 
            
     }
@@ -280,7 +273,7 @@ h2 {
 
 .music__container.play {
     .img-container img {
-        animation-play-state: running;
+        visibility: visible;
         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 
     }
@@ -328,7 +321,7 @@ h2 {
     display: flex;
     flex-flow: column nowrap;
     background-color: rgba(255, 255, 255, 0.74);
-    border-radius: 15px 15px 0 0;
+   
     position: absolute;
     top: 0;
     left: 20px;
