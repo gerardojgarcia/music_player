@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/main.d9ee62f6.css">
+    <link rel="stylesheet" href="./src/scss/main.scss">
+
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <div class="music__player-main">
+        <header>
+            <div class="header__logo">
+                <strong>D.S.D. Radio</strong>
+
+            </div>
+            <nav>
+                <a href="">HOME</a>
+                <a href="">NOW PLAYING</a>
+                <a href="">LIBRARY</a>
+            </nav>
+
+            <button id="#nav-btn">Sign In</button>
+        </header>
+
+        <div class="sidebar">
+            <div class="sidebar__search">
+
+                <input type="text" name="search " class="search" id="search" placeholder="Search..."><i
+                    class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <ul class="sidebar__categories">
+                <li id="now-playing">Now Playing</li>
+                <li id="popular">Popular Albums</li>
+                <li id="artists">Artists</li>
+                <li id="genres">Genres </li>
+                <li id="playlist">Playlists</li>
+            </ul>
+        </div>
+        <div class="sidebar2"></div>
+        <h2> Desert Player</h2>
+        
+        <h3 id="player-title">Now Playing</h3>
+        
+
+
+        <!---Now Playing Section-->
+            
+                <div class="music__container" id="music__container" >
+                    
+                    <div class="music__container-info">
+                    <h4 id="title"></h4>
+                    <div class="music__container-progress">
+                        <div class="progress"></div>
+                        <div class="duration">
+                            <p id="tracktime">0 / 0</p>
+                        </div>
+                    </div>
+                    </div>
+                    <audio src="" id="audio"></audio>
+                    <div class="img-container">
+                    <img src="" alt="music-cover" id="cover">
+                    </div>
+                    <div class="music__container-navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                    </div> 
+                    
+                    </div>
+            
+        <!--Popular ALbums Section-->
+
+        <div class="popular__albums-container" id="popular-albums">
+            <div class="album-title"><strong>Albums</strong></div>
+            <div class="popular-albums-cards">
+                <div class="album-card">
+                    <div class="album-img"> <img src="./images/Size - Esta Noche.png" alt=""></div>
+                    <p class="album-info"></p>
+                </div>
+                <div class="album-card"><div class="album-img"></div>
+                <p class="album-info"></p></div>
+                <div class="album-card"><div class="album-img"></div>
+                <p class="album-info"></p></div>
+                <div class="album-card"><div class="album-img"></div>
+                <p class="album-info"></p></div>
+
+            </div>
+
+
+        </div>
+
+        <footer>
+            <h5>Newsletter</h5>
+        </footer>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="./player.js"></script>
+    
+</body>
+
+</html>
